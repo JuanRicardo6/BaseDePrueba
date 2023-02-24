@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Actividad 1.unity
+  - enabled: 0
+    path: Assets/Actividad 1/Actividad 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Actividad2/Escena de autenticacion.unity
+    guid: 5c502dea63473cb4c8d02a28cfd1c2dc
+  - enabled: 1
+    path: Assets/Actividad2/Login Inicial.unity
+    guid: a97620fb5e349b9439ab5afef7a8acb4
+  - enabled: 1
+    path: Assets/Actividad2/Menu Principal.unity
+    guid: 5650f082ac9bc264798d3c08fa5c274c
+  - enabled: 1
+    path: Assets/Actividad2/Scores.unity
+    guid: 92d5d4104e4f23046848926e640a031a
   m_configObjects: {}
