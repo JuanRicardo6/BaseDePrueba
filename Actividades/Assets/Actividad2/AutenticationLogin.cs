@@ -33,7 +33,7 @@ public class AutenticationLogin : MonoBehaviour
     IEnumerator GetPerfil()
     {
         //a que direccion y que informacion se manda
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         UnityWebRequest www = UnityWebRequest.Get(ServerApiUrl + "/api/usuarios/" + username);
         //para enviar el token
         www.SetRequestHeader("x-token", token);
@@ -56,7 +56,7 @@ public class AutenticationLogin : MonoBehaviour
                 letrero.text = "Bienvenido de vuelta " + jsonData.usuario.username;
                 //Debug.Log(jsonData.usuario.username + " sigue con la sesion iniciada");
                 //cambiar de escena
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 SceneManager.LoadScene("Menu Principal");
             }
             else
@@ -66,7 +66,7 @@ public class AutenticationLogin : MonoBehaviour
                 mensaje += "\nError :" + www.error; //error
                 Debug.Log(mensaje);
                 letrero.text = "Redireccionando a pagina de inicio";
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
                 SceneManager.LoadScene("Login Inicial");
             }
         }
